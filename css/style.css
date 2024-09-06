@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px);
+  margin-top: 16px;
+  gap: 1.7em;
+  align-items: center;
+}
+
+p {
+  font-size: smaller;
+}
+
+.masukan {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+select {
+  text-align: center;
+  border: none;
+  border-bottom: 0.5px solid rgb(2, 221, 2);
+  outline: none;
+}
+
+.nomor {
+  display: flex;
+  gap: 1em;
+}
+
+.nomor h4 {
+  border-bottom: 0.5px solid rgb(2, 221, 2);
+}
+
+#phone {
+  border: none;
+  border-bottom: 0.5px solid rgb(2, 221, 2);
+  outline: none;
+}
+
+footer {
+  display: flex;
+  margin: 16px;
+  width: 100%;
+}
+
+.lanjut {
+  color: white;
+  background-color: rgb(2, 221, 2);
+  border: none;
+  margin-right: 30px;
+  margin-left: 30px;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+}

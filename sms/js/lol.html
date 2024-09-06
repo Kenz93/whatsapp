@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="lol-container"></div>
+
+    <script>
+      const lolContainer = document.getElementById("lol-container");
+      let lolCount = 10000; // Banyaknya LOL yang ingin ditampilkan
+      let currentIndex = 0;
+
+      // Fungsi untuk generate satu "LOL"
+      function generateSingleLOL() {
+        if (currentIndex < lolCount) {
+          const lolElement = document.createElement("span");
+          lolElement.textContent = "LOL";
+          lolElement.classList.add("lol");
+          lolContainer.appendChild(lolElement);
+
+          // Menggunakan setTimeout agar "LOL" muncul satu persatu dengan animasi
+          setTimeout(() => {
+            lolElement.style.opacity = 1;
+          }, 50);
+
+          currentIndex++;
+        } else {
+          clearInterval(intervalId); // Hentikan interval ketika semua LOL sudah ditampilkan
+        }
+      }
+
+      // Memanggil generateSingleLOL setiap 0.5 detik
+      const intervalId = setInterval(generateSingleLOL, 5);
+    </script>
+  </body>
+</html>
